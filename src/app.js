@@ -7,6 +7,9 @@ const morgan = require("morgan");
 
 const keys = require("./config/keys");
 
+//import routes
+const userV1Routes = require("./routes/v1/user/api");
+
 const app = express();
 dotenv.config();
 
@@ -31,5 +34,7 @@ app.use(express.json());
 if(process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'));
 }
+
+app.use('/api/v1/user', userV1Routes);
 
 module.exports = app;
