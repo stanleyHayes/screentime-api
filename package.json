@@ -1,16 +1,19 @@
 {
   "name": "screentime-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend API to demonstrate a CRUD for Movie and Directors",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll --coverage --detectOpenHandles",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["NodeJS", "ExpresJS", "Movies", "Directors", "Backend"],
+  "author": "Stanley Hayford <dev.stanley.hayford@gmail.com | hayfordstanley@gmail.com>",
   "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",
