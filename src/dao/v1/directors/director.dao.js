@@ -1,4 +1,4 @@
-const Director = require("./../../models/v1/director");
+const Director = require("../../../models/v1/director");
 
 /**
  * @typedef Director

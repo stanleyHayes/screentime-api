@@ -31,10 +31,10 @@ app.use(cors());
 //populate req.body with body data
 app.use(express.json());
 
-if(process.env.NODE_ENV === 'development'){
+if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
 
-app.use('/api/v1/user', userV1Routes);
+app.use(userV1Routes);
 
 module.exports = app;

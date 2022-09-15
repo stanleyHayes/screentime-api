@@ -1,4 +1,4 @@
-const directorDAO = require("./../../../../dao/v1/director.dao");
+const directorDAO = require("../../../../dao/v1/directors/director.dao");
 
 exports.createDirector = async (req, res) => {
     try {
