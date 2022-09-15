@@ -26,7 +26,7 @@ mongoose.connect(keys.DATABASE_URL).then(result => {
 app.use(helmet({xssFilter: true}));
 
 //enable cors
-app.use(cors());
+app.use(cors({'Access-Control-Allow-Origin': "*"}));
 
 //populate req.body with body data
 app.use(express.json());
